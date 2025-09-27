@@ -1,0 +1,23 @@
+using System;
+public class Fantasminhas{
+    public string Habilidade;
+    public string Nick;
+    public string Cor;
+    public void GerarFantasma(){
+        Console.WriteLine($" Meu nick é {Nick}, tenho a Habilidade {Habilidade}, minha cor é {Cor}.");
+    }
+    public void Movimentar(string Mover){
+        Console.WriteLine($"O {Nick} se moveu para {Mover}");
+    }
+    }
+    
+    public class PacMan{
+        public static void Main(){
+        Fantasminhas f1 = new Fantasminhas();
+        f1.Habilidade="Invisibilidade";
+        f1.Nick ="Dante";
+        f1.Cor="Marrom";
+        f1.GerarFantasma();
+        f1.Movimentar("Lado direito");
+    }
+    }
